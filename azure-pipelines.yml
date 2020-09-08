@@ -6,8 +6,11 @@
 trigger:
 - master
 
+variables:
+  VM_IMAGE: $(vmImage)
+  
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: $(VM_IMAGE)
 
 steps:
 - task: Maven@3
