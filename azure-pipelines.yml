@@ -10,7 +10,7 @@ variables:
   VM_IMAGE: $(vmImage)
   
 pool:
-  vmImage: $(VM_IMAGE)
+  vmImage: 'ubuntu-latest'
 
 steps:
 - task: Maven@3
